@@ -6,13 +6,46 @@
   <p>Austin, Texas boasts many unique and strange attractions, both historic and modern. </p>
   </article>
   <div class="row">
-  {% for name in austin.landmarks %}
+  {% for attraction in austin.landmarks %}
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">{{ attraction.name }}</h5>
+        <img src="{{ attraction.image }}" class="img-fluid card-img-top">
+        <p class="card-text">{{ attraction.location }}</p>
+        <p class="card-text"> {{attraction.activities }} </p>
+        <a href="{{ attraction.source }}" target="_blank">More Information</a>
+        
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="row">
+  {% for festivities in austin.activities %}
+  <div class="col-sm-6">
+    <div class="card bg-secondary">
+      <div class="card-body">
+        <h5 class="card-title">{{ festivities.activity }}</h5>
+        <p class="card-text">{{ festivities.date_time }}</p>
+        <p class="card-text"> {{ festivities.address }} </p>
+        <a href="{{ festivities.url }}" target="_blank">More Information</a>
+        
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+
+  <div class="row">
+  {% for art in austin.murals %}
+  <div class="col-sm-6">
+    <div class="card bg-danger">
+      <div class="card-body">
+        <h5 class="card-title">{{ art.name }}</h5>
+        <p class="card-text">{{ art.address }}</p>
+        <a href="{{ art.map_location }}" target="_blank">More Information</a>
+        
       </div>
     </div>
   </div>
