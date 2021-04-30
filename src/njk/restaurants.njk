@@ -1,0 +1,23 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  <h1>Local Austin Cuisine</h1>
+  <p>Austin, Texas offers a wide selection of food from many local eateries. </p>
+  
+<div class="row">
+{% for eatery in restaurants.restaurants %}
+  <ul class="list-unstyled">
+  <li class="media">
+    <img class="img-fluid img-thumbnail w-25 mr-4" src="../img/{{ eatery.image }}" alt="Responsive Image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">{{ eatery.name }}</h5>
+      <p>{{ eatery.category }}</p>
+      <p>{{ eatery.address }}</p>
+    </div>
+  </li>
+</ul> 
+{% endfor %}
+</div> 
+</article>
+{% endblock %}
