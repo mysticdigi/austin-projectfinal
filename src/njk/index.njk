@@ -14,37 +14,26 @@
         <img src="{{ attraction.image }}" class="img-fluid card-img-top">
         <p class="card-text">{{ attraction.location }}</p>
         <p class="card-text"> {{attraction.activities }} </p>
-        <a href="{{ attraction.source }}" target="_blank">More Information</a>
+        <a href="{{ relative_path }}attractions/{{ attraction.slug}}.html" target="_blank">More Information</a>
         
       </div>
     </div>
   </div>
   {% endfor %}
 
+  
+ 
   <div class="row">
+  <h2 class="fluid-text align-center">Things To Do<h2>
   {% for festivities in austin.activities %}
   <div class="col-sm-6 col-lg-4">
+ 
     <div class="card bg-secondary mb-2">
       <div class="card-body">
         <h5 class="card-title">{{ festivities.activity }}</h5>
         <p class="card-text">{{ festivities.date_time }}</p>
         <p class="card-text"> {{ festivities.address }} </p>
         <a href="{{ festivities.url }}" target="_blank">More Information</a>
-        
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-
-
-  <div class="row">
-  {% for art in austin.murals %}
-  <div class="col-sm-6 col-lg-2">
-    <div class="card bg-danger mb-6">
-      <div class="card-body">
-        <h5 class="card-title">{{ art.name }}</h5>
-        <p class="card-text">{{ art.address }}</p>
-        <a href="{{ art.map_location }" target="_blank">More Information</a>
         
       </div>
     </div>

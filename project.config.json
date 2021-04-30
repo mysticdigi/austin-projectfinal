@@ -1,16 +1,6 @@
 {
   "files": [
     {
-      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
-      "type": "doc",
-      "name": "library"
-    },
-    {
-      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
-      "type": "sheet",
-      "name": "bookstores"
-    },
-    {
       "fileId": "1s1-_wepke7NTNH0ITd0Uuv06Lskkd6XCt6p0GPGwphg",
       "type":"sheet",
       "name": "landmarks"
@@ -24,11 +14,11 @@
   ],
   "to_bake": [
     {
-      "template": "bake-book",
-      "data": "library",
-      "array": "books",
+      "template": "bake-landmarks",
+      "data": "austin",
+      "array": "landmarks",
       "slug": "slug",
-      "path": "books"
+      "path": "attractions"
     }
   ]
 }

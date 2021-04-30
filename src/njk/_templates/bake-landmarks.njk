@@ -4,7 +4,7 @@
 
 {% block page_title %}{{ title }}{% endblock %}
 
-{% block page_description %}{{ title }} by {{ author }}{% endblock %}
+{% block page_description %}{{ name }} {{ location }}{% endblock %}
 
 {% block content %}
   <article class="container">
@@ -14,7 +14,7 @@
       </div>
       <div class="col-sm-8">
           <h1>{{ title }}</h1>
-          <p>{{ blurb | safe }}</p>
+          <p>{{ description | safe }}</p>
       </div>
     </div>
   </article>
