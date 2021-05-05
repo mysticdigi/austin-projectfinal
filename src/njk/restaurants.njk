@@ -5,11 +5,11 @@
   <h2 class="page_topic">Local Austin Cuisine</h2>
   <p class="intro">Austin, Texas offers a wide selection of food from many local eateries. </p>
   
-<div class="rest-loop">
+<div class="rest_loop">
 <ul class="list-unstyled">
 {% for eatery in restaurants.restaurants %}
 
-  <li class="media">
+  <li class="media rest_item">
     <img class="img-fluid img-thumbnail w-25 mr-4" src="../img/{{ eatery.image }}" alt="Responsive Image">
     <div class="media-body">
       <h5 class="mt-0 mb-1">{{ eatery.name }}</h5>
