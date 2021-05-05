@@ -23,6 +23,8 @@
 // Import partials
 @import "nav";
 
+@import url(..\icj\austin-projectfinal\fonts\Lobster-Regular.ttf);
+
 h3 {
   font-size: 1.5rem;
 }
@@ -31,10 +33,10 @@ h3 {
 h2, .intro{
   margin: auto;
   width: 50%;
-  padding: 10px;;
+  padding: 10px;
 }
 
-@font-face {
+@font-face{
   font-family: Lobster;
   src: url(fonts\Lobster-Regular.ttf);
 }
@@ -62,3 +64,16 @@ h5{
   font-size: 2rem;
 }
 
+.nav-image{
+height: 10%;
+width:10%;
+padding: 0%;
+}
+
+.nav-item{
+  float: left;
+}
+
+article{
+  background-color: lightgoldenrodyellow;
+}
