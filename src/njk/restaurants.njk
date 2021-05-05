@@ -2,12 +2,13 @@
 
 {% block content %}
 <article class="container">
-  <h1>Local Austin Cuisine</h1>
-  <p>Austin, Texas offers a wide selection of food from many local eateries. </p>
+  <h2 class="page_topic">Local Austin Cuisine</h2>
+  <p class="intro">Austin, Texas offers a wide selection of food from many local eateries. </p>
   
-<div class="row">
+<div class="rest-loop">
+<ul class="list-unstyled">
 {% for eatery in restaurants.restaurants %}
-  <ul class="list-unstyled">
+
   <li class="media">
     <img class="img-fluid img-thumbnail w-25 mr-4" src="../img/{{ eatery.image }}" alt="Responsive Image">
     <div class="media-body">
@@ -16,8 +17,9 @@
       <p>{{ eatery.address }}</p>
     </div>
   </li>
-</ul> 
+
 {% endfor %}
+</ul> 
 </div> 
 </article>
 {% endblock %}
