@@ -71,6 +71,25 @@
       "address": "2400 E Oltorf St #1A, Austin, TX 78741",
       "category": "Pan-Asian",
       "image": "888.jpg"
+    },
+    {
+      "name": "Sushi Hi",
+      "address": "8557 Research Blvd #146, Austin, TX 78758",
+      "category": "Pan-Asian",
+      "image": "sushi-hi.jpg"
+    },
+    {
+      "name": "Roppolo’s Pizzeria West Campus",
+      "address":  "2604 Guadalupe St Ste A, Austin, TX 78705",
+      "category": "Pizza",
+      "image": "roppolos-west-campus.jpg"
+    },
+    {
+      "name": "Lucy’s Fried Chicken",
+      "address": "5408 Burnet Road, Austin, TX 78756",
+      "category": "Southern",
+      "image": "lucys-chicken.jpg"
+
     }
   ]
 }
