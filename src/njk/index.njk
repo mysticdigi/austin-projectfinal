@@ -7,7 +7,7 @@
  
   <div class="row">
   {% for attraction in austin.landmarks %}
-  <div class="col-sm-6 col-lg-4">
+  <div class="col-sm-6 col-lg-5">
     <div class="card mb-4">
       <div class="card-body">
         <h5 class="card-title">{{ attraction.name }}</h5>
@@ -24,9 +24,9 @@
 
   
   <div class="container">
-    <div class="table-responsive table-bordered table-striped">
-    <table class="table">
-    <thead>
+    <div class="table-responsive table-bordered">
+    <table class="table table-hover table-striped">
+    <thead class="thead-dark">
        <tr>
          <th>Activity</th>
          <th>Date and Time</th>
@@ -38,9 +38,9 @@
    <tbody>
      <tr>
         <td class="table-title">{{ festivities.activity }}</h5>
-        <td class="table-text">{{ festivities.date_time }}</p>
-        <td class="table-text"> {{ festivities.address }} </p>
-        <td href="{{ festivities.url }}" target="_blank">More Information</a>
+        <td class="table-text">{{ festivities.date_time }}</td>
+        <td class="table-text"> {{ festivities.address }} </td>
+        <td> <a href="{{ festivities.url }}" target="_blank">More Information</a></td>
       </tr>
    </tbody>
       </div>
